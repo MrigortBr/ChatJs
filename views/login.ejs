@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/loginStyle.css">
+    <link rel="stylesheet" href="css/popup.css">
+</head>
+<body>
+    <form action="">
+    <div class="login">
+        <div class="login-background">
+            <div class="login-text">
+                <p class="login-text-welcome">Seja bem vindo(a) ao <br> <a>ChatJS</a></p>
+            </div>
+            <div class="login-infomation">
+                <div class="login-infomation-login">
+                    <input type="text" name="email" class="login-input" required spellcheck="false">
+                    <p class="login-input-text">Digite seu email</p>
+                </div>
+                <div class="login-infomation-login">
+                    <input type="text" name="password" class="login-input" required spellcheck="false">
+                    <p class="login-input-text">Digite sua senha</p>
+                </div>
+                <p class="login-information-register"><a href="/register">Não tem conta? clique aqui</a> </a></p>
+
+                <button class="login-information-submit" onclick="login()">Login</button>
+            </div>
+        </div>
+    </div>
+</form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.6.1/socket.io.js" integrity="sha512-xbQU0+iHqhVt7VIXi6vBJKPh3IQBF5B84sSHdjKiSccyX/1ZI7Vnkt2/8y8uruj63/DVmCxfUNohPNruthTEQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/loginScript.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</body>
+</html>

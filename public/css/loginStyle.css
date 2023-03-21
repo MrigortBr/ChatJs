@@ -1,0 +1,153 @@
+body{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.login{
+    background: rgb(95,121,153);
+    background: linear-gradient(180deg, rgba(95,121,153,1) 24%, rgba(35,97,171,1) 63%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.login-background{
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    width: 80vw;
+    height: 80vh;
+    background-color: rgb(82, 82, 82);
+    margin: auto;
+    border-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0;
+    animation: opacityLogin 1s;
+    animation-fill-mode: forwards;
+    display: flex;
+}
+
+@keyframes opacityLogin {
+    from {opacity: 0;}
+    to{opacity: 1;}
+}
+
+.login-text{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    
+}
+
+.login-text-welcome{
+    color: white;
+    text-align: justify;
+    font-weight: 500;
+    margin: auto;
+    transition: .25s;
+    animation: zoom .3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes zoom {
+    0% {font-size: 1rem;}
+    100% {font-size: 1.8rem;}
+}
+
+.login-text-welcome a{
+    font-weight: 700;
+    color: rgb(148, 30, 148);
+    cursor: pointer;
+
+}
+
+.login-text-welcome:hover{
+    transform: scale(1.1);
+}
+
+.login-infomation{
+    width: 40%;
+    height: 50%;
+    margin: auto;
+    background-color: rgb(182, 176, 176);
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.3);
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 25% 25% 25%;
+    padding: 1%;
+}
+
+.login-information-register{
+    margin-bottom: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    height: fit-content;
+    transition: .25s;
+    cursor: pointer;
+    width: fit-content;
+    margin: auto;
+
+    
+}
+
+.login-information-register:hover{
+    transform: scale(1.1);
+}
+
+.login-infomation-login{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.login-input-text{
+    width: fit-content;
+    position: absolute;
+    margin-left: 1%;
+    margin-top: 2vh;
+    transition: .25s;
+}
+
+.login-information-submit{
+    width: 80%;
+    height: 7.2vh;
+    border-radius: 15px;
+    border: 0;    
+    margin: auto;
+    cursor: pointer;
+    transition: .25s;
+}
+
+.login-information-submit:hover{
+    transform: scale(1.05);
+    font-weight: 700;
+}
+
+.login-input{
+    width: 100%;
+    height: 7.2vh;
+    border-radius: 15px;
+    border: 0;    
+}
+
+.login-infomation-login:hover > .login-input-text{
+    margin-top: -1.8vh;
+    background-color: white;
+}
+
+.login-input:focus + .login-input-text, .login-input:valid + .login-input-text{
+    background-color: white;
+    margin-top: -1.8vh;
+}
+
+.login-input:focus, .login-input:valid, .login-infomation-login:hover .login-input{
+    border: 1px solid black;
+    outline: 0;
+}
+

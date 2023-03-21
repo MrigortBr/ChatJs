@@ -1,0 +1,94 @@
+        .add{
+            position: fixed;
+            width: 20%;
+            height: 20vh;
+            min-height: 20vh;
+            max-height: 20vh;
+            top:40%;
+            left: -40%;
+            animation: enter;
+            animation-duration: .5s;
+            animation-fill-mode: forwards;
+        }
+
+        .leaveAdd{
+            left: 40%;
+            animation: leave;
+            animation-duration: .5s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes enter {
+            to{ left: 40%;}
+        }
+
+        @keyframes leave {
+            to{ left: -40%;}
+        }
+
+        .add-background{
+            background-color: gray;
+            padding: 15px;
+            display: grid;
+            grid-template-columns: 100%;
+            width: fit-content;
+            border-radius: 15px;
+            height: 100%;
+        }
+
+        .inputs{
+            display: flex;
+            margin-bottom: 5%;
+        }
+
+        .add-input{
+            border: 0;
+            border: 1px solid transparent;
+            transition: .25s;            
+        }
+
+        #nick{
+            border-top-left-radius: 15px;
+            border-top-right-radius: 0;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 0;
+            margin-right: 0;
+            border-right: 1px solid black;
+            width: 70%;
+        }
+        #id{
+            border-top-left-radius: 0;
+            border-top-right-radius: 15px;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 15px;
+            margin-left: 0;
+            border-left: 1px solid black;
+            width: 30%;
+        }
+        .buttons{
+            display: flex;
+            justify-content: center;
+        }
+
+        .add-text{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            border-bottom: 1px solid #3d3d3d;
+        }
+
+        .add-bt{
+            border-radius: 15px;
+            border: 2px solid transparent;
+            margin: auto;
+            cursor: pointer;
+            transition: .25s;
+            width: 40%;
+        }
+        
+
+
+        
+        .add-input:focus, .add-bt:hover, .add-input:hover{
+            outline: 0;
+            border-color: black;
+        }

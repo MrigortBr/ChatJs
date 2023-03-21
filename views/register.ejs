@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link rel="stylesheet" href="css/registerStyle.css">
+    <link rel="stylesheet" href="css/popup.css">
+</head>
+<body>
+    <div class="register">
+        <div class="register-background">
+            <div class="register-text">
+                <p class="register-text-welcome">Seja bem vindo(a) ao <br> <a>ChatJS</a></p>
+                <input type="file" id="file" name="file" style="visibility: hidden; position: fixed;" accept="image/*" onchange="readImage()" >
+            </div>
+
+            <div class="register-infomation">
+                <div class="register-infomation-background">
+                    <img class="photo-information-register" onclick="openImages()" src="images/nouser.svg" alt="">
+                </div>
+                <div class="register-infomation-register">
+                    <input type="text" name="name" class="register-input" required spellcheck="false">
+                    <p class="register-input-text">Digite seu nome</p>
+                </div>
+                <div class="register-infomation-register">
+                    <input type="text" name="email" class="register-input" required spellcheck="false">
+                    <p class="register-input-text">Digite seu email</p>
+                </div>
+                <div class="register-infomation-register">
+                    <input type="text" name="password" class="register-input" required spellcheck="false">
+                    <p class="register-input-text">Digite sua senha</p>
+                </div>
+                <p class="register-information-register"><a href="/register">Já tem conta? clique aqui</a> </a></p>
+
+                <button class="register-information-submit" onclick="register()">register</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.6.1/socket.io.js" integrity="sha512-xbQU0+iHqhVt7VIXi6vBJKPh3IQBF5B84sSHdjKiSccyX/1ZI7Vnkt2/8y8uruj63/DVmCxfUNohPNruthTEQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/registerScript.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</body>
+</html>

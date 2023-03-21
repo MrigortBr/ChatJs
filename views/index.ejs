@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.6.1/socket.io.js" integrity="sha512-xbQU0+iHqhVt7VIXi6vBJKPh3IQBF5B84sSHdjKiSccyX/1ZI7Vnkt2/8y8uruj63/DVmCxfUNohPNruthTEQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="css/indexStyle.css">
+    <link rel="stylesheet" href="css/chatStyle.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/addStyle.css">
+
+</head>
+<body>
+    <div class="agend">
+        <div class="agend-user">
+            <div class="agend-user-information">
+                <img src="<%=user.img%>" alt="" class="agend-logo">
+                <p class="agend-user-name">Olá, <%=user.name%>#<%=user.id%></p>
+            </div>
+            <div class="agend-user-config">
+                <svg class="agend-user-config-logo" onclick="openAdd()" width="30" height="30" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.5 12h21-21ZM12 1.5v21-21Z"></path>
+                </svg>
+                <svg class="agend-user-config-logo" onclick="leave()" width="30" height="30" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.75 3h6v18h-6"></path>
+                    <path d="M2.25 12h15"></path>
+                    <path d="m11.25 6 6 6-6 6"></path>
+                    </svg>
+                <!-- <svg class="agend-user-config-logo" width="30" height="30" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.75 1.5v3l-1.5.75L6 3 3 6l2.25 2.25-.75 1.5h-3v4.5h3l.75 1.5L3 18l3 3 2.25-2.25 1.5.75v3h4.5v-3l1.5-.75L18 21l3-3-2.25-2.25.75-1.5h3v-4.5h-3l-.75-1.5L21 6l-3-3-2.25 2.25-1.5-.75v-3h-4.5Z"></path>
+                    <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
+                  </svg> -->
+
+            </div>
+        </div>
+        <div class="agend-contacts">
+            <div class="load">
+
+            </div>
+        </div>
+        <p style="text-align: center;" class="cop">Copyright by Igortbr</p>
+
+    </div>
+    <div class="chat-background">
+
+    </div>
+
+
+    <script src="js/popup.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="js/chatScript.js"></script>
+    <script src="js/addContact.js"></script>
+
+
+
+</body>
+</html>
